@@ -59,7 +59,7 @@ const Contact = () => {
 
         <div className="social-links">
           <a href="mailto:singhshubham9288@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src={gmailLogo} alt="Gmail" /> singhshubham9288@gmail.com
+            <img src={gmailLogo} alt="Gmail" /> singhshubham9283@gmail.com
           </a>
           <a href="https://www.linkedin.com/in/shubham-singh-728b03213/?trk=opento_sprofile_details" target="_blank" rel="noopener noreferrer">
             <img src={linkedinLogo} alt="LinkedIn" /> Shubham Singh
