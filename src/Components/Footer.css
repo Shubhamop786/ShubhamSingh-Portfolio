@@ -1,8 +1,37 @@
 /* src/components/Footer.css */
 .footer {
-    padding: 2rem;
-    background-color: #1e1e1e;
-    color: #fff;
-    text-align: center;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.875rem; /* Slightly smaller text for better fit on small screens */
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
   }
-  
+
+  .footer p {
+    font-size: 0.8rem; /* Adjust font size for better readability on smaller screens */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem; /* Further reduce padding for very small screens */
+  }
+
+  .footer p {
+    font-size: 0.75rem; /* Adjust font size for very small screens */
+  }
+}

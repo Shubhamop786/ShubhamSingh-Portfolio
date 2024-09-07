@@ -15,8 +15,34 @@ h1, h2, p {
 }
 
 /* Global Responsive Design */
+@media (max-width: 1200px) {
+  body {
+    font-size: 1rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
 @media (max-width: 768px) {
   body {
-    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    font-size: 0.875rem; /* Adjust font size for very small screens */
+  }
+  
+  .App {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+  }
+  
+  .App {
+    padding: 5px; /* Add less padding for extra small screens */
   }
 }

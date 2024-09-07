@@ -1,45 +1,110 @@
 /* src/components/Header.css */
 .header {
-    background-color: #1e1e1e;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center; /* Vertically centers items */
-    justify-content: space-between; /* Spaces items evenly */
-  }
-  
-  .header .logo {
-    display: flex;
-    align-items: center; /* Vertically centers the logo */
-  }
-  
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Spaces items evenly */
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center; /* Vertically centers the logo */
+}
+
+.header .logo img {
+  height: 100px; /* Increased height for a bigger logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.header nav {
+  flex-grow: 1; /* Allows nav to take up remaining space */
+  display: flex;
+  justify-content: center; /* Centers nav items horizontally */
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Global Responsive Design for Header */
+@media (max-width: 1200px) {
   .header .logo img {
-    height: 100px; /* Increased height for a bigger logo */
-    width: 200px;
+    height: 80px; /* Adjust logo size for medium screens */
   }
-  
-  .header nav {
-    flex-grow: 1; /* Allows nav to take up remaining space */
-    display: flex;
-    justify-content: center; /* Centers nav items horizontally */
-  }
-  
+
   .header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
+    gap: 1.5rem; /* Adjust spacing between nav items */
   }
-  
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .header .logo img {
+    height: 70px; /* Adjust logo size for smaller screens */
+  }
+
+  .header nav ul {
+    gap: 1rem; /* Adjust spacing between nav items */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .header nav {
+    width: 100%; /* Full width for nav */
+    justify-content: flex-start; /* Align nav items to the start */
+  }
+
+  .header nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Full width for nav items */
+  }
+
   .header nav ul li {
-    display: inline;
+    display: block; /* Stack list items vertically */
+    margin-bottom: 0.5rem; /* Add spacing between items */
   }
-  
+
   .header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
-  
+}
+
+@media (max-width: 576px) {
+  .header .logo img {
+    height: 60px; /* Adjust logo size for very small screens */
+  }
+
+  .header nav ul {
+    gap: 0.5rem; /* Adjust spacing between nav items */
+  }
+
+  .header nav ul li a {
+    font-size: 0.9rem; /* Further adjust font size for very small screens */
+  }
+}

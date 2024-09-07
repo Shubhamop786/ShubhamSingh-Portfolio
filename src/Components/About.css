@@ -1,88 +1,149 @@
 /* src/components/About.css */
 .about {
-    margin-top: -200px;
-    padding: 4rem 2rem;
-    background-color: #1e1e1e; /* Dark background */
-    color: #f4f4f4; /* Light text */
-  }
-  
-  .about-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* Makes it responsive */
-  }
-  
-  .about-photo {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    max-width: 50%; /* Limits the image container to half the width */
-  }
-  
-  .about-photo img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+  margin-top: -200px;
+  padding: 4rem 2rem;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f4f4f4; /* Light text */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  max-width: 50%; /* Limits the image container to half the width */
+}
+
+.about-photo img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
   height: auto;
   border-radius: 50%; /* Circular border for a more smooth look */
-  /* border: 5px solid #120000; Light border around the image to blend with dark background */
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5); /* Softer shadow */
+}
+
+.about-content {
+  flex: 1;
+  max-width: 50%; /* Limits the content to half the width */
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Ensure the heading is visible */
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e0e0; /* Softer white for the text */
+}
+
+.about-content .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #61dafb;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-content .btn:hover {
+  background-color: #21a1f1;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
+  .about-photo {
+    margin-bottom: 1.5rem;
+    max-width: 100%; /* Make the image take full width on smaller screens */
+  }
+
+  .about-photo img {
+    width: 250px; /* Adjust image size for tablets */
+  }
+
   .about-content {
-    flex: 1;
-    max-width: 50%; /* Limits the content to half the width */
-    
+    max-width: 100%; /* Allow the content to take full width on smaller screens */
   }
-  
+
   .about-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #fff; /* Ensure the heading is visible */
+    font-size: 2rem; /* Adjust font size for tablets */
   }
-  
+
   .about-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    color: #e0e0e0; /* Softer white for the text */
+    font-size: 1.1rem; /* Adjust font size for tablets */
   }
-  
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    margin-bottom: 1.5rem;
+    max-width: 100%; /* Make the image take full width on smaller screens */
+  }
+
+  .about-photo img {
+    width: 200px; /* Smaller image size for mobile */
+  }
+
+  .about-content {
+    max-width: 100%; /* Allow the content to take full width on smaller screens */
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem; /* Further adjust font size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Further adjust font size for smaller screens */
+  }
+
   .about-content .btn {
-    padding: 0.75rem 1.5rem;
-    background-color: #61dafb;
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+    padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
   }
-  
-  .about-content .btn:hover {
-    background-color: #21a1f1;
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 576px) {
+  .about-photo img {
+    width: 150px; /* Adjust image size for very small screens */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-photo {
-      margin-bottom: 1.5rem;
-      max-width: 100%; /* Make the image take full width on smaller screens */
-    }
-  
-    .about-photo img {
-      width: 200px; /* Smaller image size for mobile */
-    }
-  
-    .about-content {
-      max-width: 100%; /* Allow the content to take full width on smaller screens */
-    }
+
+  .about-content h2 {
+    font-size: 1.6rem; /* Further adjust font size for very small screens */
   }
-  
+
+  .about-content p {
+    font-size: 0.9rem; /* Further adjust font size for very small screens */
+  }
+
+  .about-content .btn {
+    font-size: 0.9rem; /* Further adjust button font size for very small screens */
+    padding: 0.5rem; /* Adjust button padding for very small screens */
+  }
+}

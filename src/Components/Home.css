@@ -1,59 +1,102 @@
 /* src/components/Home.css */
 .home {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;     /* Vertically center */
-    flex-direction: column;  /* Stack items vertically */
-    padding: 4rem 2rem;
-    background-color: #1e1e1e; /* Dark background */
-    color: #f4f4f4; /* Light text */
-    text-align: center;
-    height: 80vh; /* Full height of the viewport */
-    margin: 0; /* Ensure no additional margins */
-  }
-  
-  .home-container {
-    max-width: 1200px;
-    margin-bottom: 180px;
-    
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+  flex-direction: column;  /* Stack items vertically */
+  padding: 4rem 2rem;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f4f4f4; /* Light text */
+  text-align: center;
+  height: 80vh; /* Full height of the viewport */
+  margin: 0; /* Ensure no additional margins */
+}
+
+.home-container {
+  max-width: 1200px;
+  margin-bottom: 180px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.home p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.home .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #61dafb;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home .btn:hover {
+  background-color: #21a1f1;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .home {
+    padding: 3rem 1.5rem; /* Adjust padding for tablets */
   }
   
   .home h1 {
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-    color: #fff;
+    font-size: 2.75rem; /* Adjust font size for tablets */
+    margin-bottom: 2rem;
   }
   
   .home p {
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 1.3rem; /* Adjust font size for tablets */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    height: auto; /* Adjust height to auto for better fit */
+  }
+
+  .home h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
     margin-bottom: 1.5rem;
-    color: #e0e0e0;
   }
-  
+
+  .home p {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 576px) {
+  .home {
+    padding: 1rem; /* Adjust padding for very small screens */
+  }
+
+  .home h1 {
+    font-size: 2rem; /* Further adjust font size for very small screens */
+    margin-bottom: 1rem;
+  }
+
+  .home p {
+    font-size: 1rem; /* Further adjust font size for very small screens */
+  }
+
   .home .btn {
-    padding: 0.75rem 1.5rem;
-    background-color: #61dafb;
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 0.5rem 1rem; /* Adjust button padding for very small screens */
+    font-size: 1rem; /* Adjust button font size for very small screens */
   }
-  
-  .home .btn:hover {
-    background-color: #21a1f1;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .home h1 {
-      font-size: 2.5rem;
-    }
-  
-    .home p {
-      font-size: 1.2rem;
-    }
-  }
-  
+}
