@@ -1,0 +1,71 @@
+/* src/components/Skills.css */
+.skills {
+    padding: 4rem 2rem;
+    background-color: #1e1e1e; /* Dark background to match About section */
+    color: #f4f4f4; /* Light text color */
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .skills-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .skills-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff; /* Light color for heading */
+  }
+  
+  .skills-text p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Softer white for paragraph text */
+  }
+  
+  .skills-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 1.5rem;
+  }
+  
+  .skill-item {
+    background-color: #2e2e2e; /* Slightly lighter dark background for contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .skill-logo {
+    width: 60px; /* Adjust logo size as needed */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills-grid p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Light color for skill names */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+    }
+  
+    .skills-text {
+      text-align: center;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+  

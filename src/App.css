@@ -1,0 +1,22 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Improve readability */
+}
+
+.App {
+  text-align: center;
+}
+
+h1, h2, p {
+  margin: 0; /* Remove default margins */
+  padding: 0;
+}
+
+/* Global Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
