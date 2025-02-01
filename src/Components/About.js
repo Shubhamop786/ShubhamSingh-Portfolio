@@ -3,6 +3,7 @@ import React from 'react';
 import './About.css';
 import myPhoto from '../assets/images/pic3.png';
 
+
 function About() {
   return (
     <section id="about" className="about">
@@ -23,7 +24,7 @@ Throughout my learning journey, I've worked on multiple projects, which are show
 <br/><br/>
 Additionally, you can download my CV by clicking the button below.
           </p>
-          <a href="/Shubham Singh MERN1 Resume.pdf" download className="btn">
+          <a href="/ShubhamSinghResume.pdf" download className="btn">
             Download CV
           </a>
         </div>
